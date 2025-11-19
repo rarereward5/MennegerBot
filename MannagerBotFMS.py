@@ -82,7 +82,7 @@ async def cb_back_to_start(query: CallbackQuery, state: FSMContext):
 async def cb_problem(query: CallbackQuery, state: FSMContext):
     await state.set_state(UserForm.waiting_for_problem)
     await query.message.edit_text(
-        "Опишите вашу проблему чем я могу вам помочь
+        "Опишите вашу проблему чем я могу вам помочь"
 
 "
         "После вашего сообщения мы отправим его @owersz чтобы позже он вам ответил, прошу не спамить ему в лс"
